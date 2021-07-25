@@ -19,7 +19,7 @@ export const API = {
 	async getUsers(token) {
 		const { data } = await instance.get('/api/v1/users/', {
 			headers: {
-				Authorization: `Token: ${token}`,
+				Authorization: `Bearer Token: ${token}`,
 			},
 		});
 		console.log(data);
