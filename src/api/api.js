@@ -2,7 +2,9 @@ import axios from 'axios';
 
 const instance = axios.create({
 	baseURL: 'http://emphasoft-test-assignment.herokuapp.com/',
-	'Content-Type': 'application/json',
+	headers: {
+		'Content-Type': 'application/json',
+	},
 });
 
 export const API = {
