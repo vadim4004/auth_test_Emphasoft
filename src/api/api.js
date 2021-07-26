@@ -10,7 +10,6 @@ export const API = {
 			username,
 			password,
 		});
-		console.log('auth success');
 		return data.token;
 	},
 	logout() {
@@ -19,10 +18,9 @@ export const API = {
 	async getUsers(token) {
 		const { data } = await instance.get('/api/v1/users/', {
 			headers: {
-				Authorization: `Bearer Token: ${token}`,
+				Authorization: `Token ${token}`,
 			},
 		});
-		console.log(data);
 		return data;
 	},
 };

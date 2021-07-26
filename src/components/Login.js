@@ -78,7 +78,6 @@ export const Login = ({ setToken }) => {
 					name='username'
 					error={!!errors?.username}
 					helperText={errors?.username?.message}
-					value='test_super'
 				/>
 				<Input
 					{...register('password')}
@@ -88,7 +87,6 @@ export const Login = ({ setToken }) => {
 					name='password'
 					error={!!errors?.password}
 					helperText={errors?.password?.message}
-					value={'Nf<U4f<rDbtDxAPn'}
 				/>
 				<Button
 					className={styles.button}

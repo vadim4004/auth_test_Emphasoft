@@ -14,7 +14,6 @@ function App() {
 		<>
 			<Router>
 				<Switch>
-					{/* <Route path='/' /> */}
 					<Route path='/'>
 						<Users token={token} />
 					</Route>
